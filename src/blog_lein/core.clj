@@ -20,7 +20,7 @@
 
 (defn catalan [n]
   "Counts a Catalan number."
-  (* (/ 1 (+ n 1))
+  (* (/ 1 (inc n))
      (binomial (* 2 n) n)))
 
 (defn answer []
